@@ -5,6 +5,7 @@ title: Hello-World-new
 
 
 #Hello World
+
 첫번째 포스트임.
 
 하루패드로 작성해서 바로 올리는 방법을 찾아봐야할것같음
@@ -15,7 +16,7 @@ title: Hello-World-new
 
 그럼 첫번째 포스팅(일기) 끝.
 
-- [ ]  잘 나올려나?? --> 안나옴
+
 
 ```bash
 $ Hello Wolrd
