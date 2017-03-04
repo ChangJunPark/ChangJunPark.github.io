@@ -34,5 +34,5 @@ title: javaNetworkProgramming
 하지만 application 개발자나 소프트웨어 사용자들에게 이러한 복잡한 과정을 노출시키지 않기위해, 네트워크 통신의 여러가지 기능을 몇개의 계층으로 분리하여 캡슐화 한다. 각 계층들은 물리적 하드웨어(회선과 전기신호)와 전송되는 정보 사이의 다양한 추상화 단계를 나타낸다. 각 계층은 인접한 계층과의 인터페이스를 제공하여 하나의 계층에 있는 소프트웨어를 다른 계층에 미치는 영향 없이 수정하거나 대채 가능하도록 한다.
 
 ![]({{ site.baseurl }}/images/TCPIP.jpg)
-
+![]({{ site.baseurl }}/images/tcp-ip-layer_terminology.jpg)
 위 그림은 TCP/IP 계층을 보여준다. "application Layer" 에서는 
