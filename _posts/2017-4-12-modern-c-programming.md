@@ -11,27 +11,27 @@ title: 모던 C 프로그래밍 정리
 
 # 2. 이클립스 기본 사용법
 
-##2.1 run
+## 2.1 run
  - Ctrl+F11
 
-##2.2 debug
+## 2.2 debug
  - breakpoint
  - 특정 조건이 성립햇을 때 정지하기 (Breakpoint Properties..  --> Condition)
  - 특정 위치가 n번째로 실행되면 정지하기 (Breakpoint Properties..  --> Ignore Count)
  - 변수의 값 변경 (Variables --> Value 편집)
 
-##2.3 jump
+## 2.3 jump
  - jump to define (F3)
  - open call hierarchy (Ctrl+Alt+H)
  - 뒤로가기 앞으로 가기 (alt + 방향키)
 
-##2.4 content assist 자동완성 (Alt + /)
+## 2.4 content assist 자동완성 (Alt + /)
 
-##2.5 Macro analysis (Ctrl + =)
+## 2.5 Macro analysis (Ctrl + =)
 
 # 3. C and OOP
 
-##3.1 Stack을 통한 C의 모듈화와 객체지향
+## 3.1 Stack을 통한 C의 모듈화와 객체지향
 고전적인 스택 구현
 
 
@@ -134,7 +134,7 @@ bool pop(int *pRet) {
  - static 지시자를 붙여 namespase 구분
  - 외부에 공개하지 않을 함수, 변수에는 static 지시자를 붙여 캡슐화 시킴
 
-##3.2 구조체를 이용한 자료구조와 로직의 분리
+## 3.2 구조체를 이용한 자료구조와 로직의 분리
 
 ### 코드 3-03에서의 문제점
  - 하나의 Stack밖에 사용 못함 --> 해결책:
@@ -218,7 +218,7 @@ bool pop(Stack *p, int *pRet) {
 - 구조체를 이용함으로써 스택 구조는 독립적으로 비뀜
 - 부품으로도 충분히 사용 가능한 수준에 도달함
 
-##3.3 C를 이용한 객체 지향
+## 3.3 C를 이용한 객체 지향
 
 #### 범위 검사 기능을 가진 스택
 스택에 푸시할때 해당 범위만 가려서 푸시하기
@@ -272,7 +272,7 @@ bool push (Stack *p, int val){
 `Stack stack = newStackWithRangeCheck(buf, 0, 9)` 
 위의 코드는  0-9의 범위의 값을 저장하는 stack을 생성함
 
-####위 [코드 3-06]의 문제점
+#### 위 [코드 3-06]의 문제점
  - 범위검사 기능이 없는 일반 스택을 생성한 경우에도 needRageCheck, min, max강느 불필요한 맴버를 스텍에 보유해야 함. (메모리 낭비 ㅠㅠ)
  - Stack에 또 다른 검사 기능을 추가하고 싶다면 구조체에 다른 맴버를 추가해야 함
 ```cpp
@@ -296,7 +296,7 @@ bool push (Stack *p, int val){
  - 위와같이 계속 늘어나게 되면 구조체 내부에서 제공하는 기능에 필요한 모든 멤버를 가져야 하므로 push함수도 그 기능 때문에 크기가 커짐
  - 기능이 늘어나면 곧장 걷잡을 수 없을 만큼 복잡해 짐 (*이라고 써있지만 그냥 이미 복잡함..*)
 
-####1차 수정 -> bool변수, min, max 분리
+#### 1차 수정 -> bool변수, min, max 분리
 
 
 ```cpp
@@ -343,7 +343,7 @@ bool push (Stack *p, int val){
  - 범위 검사에 필요한 데이터를 Range구조체로 옮기고 isRangeOk함수는 Range를 받아 판덩함
  - 스텍 데이터를 가진 Stack과 범위 검색을 위한 데이터를 가진 Range가 분리됨
 
-####2차 수정 -> 체크 기능의 볌용화
+#### 2차 수정 -> 체크 기능의 볌용화
 상하 한계 검사이외에 직전 push된 값 이상의 값만 push 가능하도록 해보자.
 
 먼저, Validator 라는 구조체에 입력값을 검사하는 범용적인 역할을 구현함
