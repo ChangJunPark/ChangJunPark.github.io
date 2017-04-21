@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Git 브랜치 수정 관련
+title: Git 브랜치 관련 명령어 모음
 ---
 
-# 맨날 까먹는 Git Branch 생성, 수정, 삭제 관련 명령어 모음
+###맨날 까먹는 Git Branch 생성, 수정, 삭제 관련 명령어 모음
 
-이제는 제발 까먹지 말자
+++이제는 제발 까먹지 말자++
 
 ### remote에 있는 branch 목록 보기
 ```bash
