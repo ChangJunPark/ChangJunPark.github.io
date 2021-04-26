@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Git 브랜치 관련 명령어 모음
+published: false
 ---
 
 ###### 맨날 까먹는 Git Branch 생성, 수정, 삭제 관련 명령어 모음

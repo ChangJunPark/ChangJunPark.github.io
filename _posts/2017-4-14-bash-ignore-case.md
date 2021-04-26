@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bash 자동완성 대소문자 구분하지 않기
+published: false
 ---
 
 /etc/inputrc파일에 

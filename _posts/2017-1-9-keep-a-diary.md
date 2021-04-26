@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 일기 쓰자
+published: false
 ---
 
 # 일기쓰기가 왜 이렇게 어렵나.

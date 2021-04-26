@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 모던 C 프로그래밍 정리
+published: false
 ---
 
 [TOC]
